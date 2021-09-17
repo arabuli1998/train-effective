@@ -1,13 +1,127 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.firstBoxOne {
+  text-align: center;
+  height: 50px;
+  animation: up-to-down 2s ease-in forwards infinite alternate;
+  cursor: pointer;
+  transition: 1s ease-in;
+}
+@keyframes up-to-down {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(30%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+.firstBoxOne:hover {
+  color: rgba(93, 172, 173, 1);
+}
+
+header {
+  background: 'transparent';
+  position: sticky;
+  top: 0;
+  width: 100%;
+  transition: 0.5s;
+  position: fixed;
+  z-index: 4;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  margin-bottom: 50px;
+}
+
+
+header.blue {
+  background: rgba(0, 109, 112, 0.75);
+  box-shadow: 1px 2px 5px rgba(195, 195, 195, 0.55);
+}
+.two{
+  display: flex;
+  width: 100px;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (min-width: 601px) {
+.ul {
+  padding: 15px;
+  display: flex;
+  max-width: 500px;
+  min-width: 440px;
+  width: 100%;
+  justify-content: space-between;
+  list-style: none
+}
+}
+.label{
+  display: none;
+  cursor: pointer;
+  width: 80px;
+  text-align: center;
+}
+#open{
+  display: none;
+}
+
+@media (max-width: 600px) {
+header{
+  flex-direction: column;
+}
+  .label{
+    display: block;
+  }
+  .ul {
+  width: 100%;
+  flex-direction: column;
+  list-style: none;
+  background-color:   rgba(0, 109, 112, 0.85);
+  padding: 15px;
+  flex-direction: column;
+  align-items: center;
+  display: none;
+  height: 160px;
+  justify-content: space-evenly;
+    
+  }
+  .li{
+    width: 100%;
+    text-align: center;
+    height: 40px;
+  }
+  .two{
+    width: 100%;
+
+  }
+  
+    
+  }
+#open:checked~.ul{
+  display: block;
+  
+}
+.logo {
+  height: 50px;
+  width: 100px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.li {
+  cursor: pointer;
+}
+.li:hover {
+  color: rgba(0, 189, 195, 0.55);
 }
