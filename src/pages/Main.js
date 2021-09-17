@@ -1,16 +1,14 @@
 import React from 'react';
-import { Grid, makeStyles, Box} from '@material-ui/core';
+import { Grid, makeStyles, Box } from '@material-ui/core';
 import First from '../components/first/First';
 import Second from '../components/second/Second';
 import Three from '../components/three/Three';
 import Fourth from '../components/fourth/Fourth';
 import Five from '../components/five/Five';
-import Six from '../components/six/Six'
+import Six from '../components/six/Six';
 import Seven from '../components/Seven';
-import Eight from '../components/eight/Eight'
+import Eight from '../components/eight/Eight';
 import Barmenu from '../components/Barmenu';
-
-
 
 const useStyles = makeStyles({
   mainContainer: {
@@ -24,8 +22,6 @@ const useStyles = makeStyles({
     backgroundRepeat: 'no-repeat',
   },
 
-  
-  
   /**************************seven row styles  */
   sevenBox: {
     minHeight: '80vh',
@@ -51,7 +47,6 @@ const useStyles = makeStyles({
   },
 
   /**************************seven row styles end */
-  
 });
 
 const Main = () => {
@@ -69,12 +64,12 @@ const Main = () => {
       <Box className={classes.sevenBox} id="seven">
         <Grid contaner className={classes.sevenContainer}>
           <Grid item xs={12} className={classes.sevenTextGrid}>
-            We offer
+            WE OFFER
           </Grid>
           <Seven />
         </Grid>
       </Box>
-     <Eight />
+      <Eight />
     </Grid>
   );
 };
