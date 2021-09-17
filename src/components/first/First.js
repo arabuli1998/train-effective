@@ -41,7 +41,7 @@ const First = () => {
         <Grid item xs={12} sm={10} md={8} className={classes.firstBoxMain}>
           <h3 className={classes.firstBoxH2}>
             ALTEXSOFT IS LAUNCHING AN INTERNATIONAL BOOT CAMP IN GEORGIA
-            REACT.JS, NODE.JS, .NET WANTED
+            REACT.JS, NODE.JS, NET WANTED
           </h3>
           <h1 className={classes.firstBoxH1}>
             Hey there! AltexSoft Boot Camp is looking for ambitious engineers in
