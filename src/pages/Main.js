@@ -71,7 +71,6 @@ const Main = () => {
           <Grid item xs={12} className={classes.sevenTextGrid}>
             We offer
           </Grid>
-
           <Seven />
         </Grid>
       </Box>
