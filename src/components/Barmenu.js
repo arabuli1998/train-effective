@@ -31,7 +31,7 @@ class Barmenu extends React.Component {
             LO GO
           </Link>
           <label for="open" className="label">
-            XxX
+            XyX
           </label>
         </div>
         <ul className="ul">
